@@ -331,6 +331,7 @@
 - ICD -> ICD -> interface control document
 - UVS -> UVS -> Ultraviolet Spectrograph
 - IFS -> IFS -> Integral Field Spectrograph
+- ERD -> ERD -> Environmental Requirements Document
 
 ---------------------------------
 
