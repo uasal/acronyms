@@ -231,8 +231,8 @@
 - CCS -> WCC -> wavefront and context camera
 - WCC -> WCC -> wavefront and context camera
 - LSST -> LSST -> Large Synoptic Survey Telescope
-- M1 -> M1 -> Mirror 1
-- M2 -> M2 -> Mirror 2
+- M1 -> M1 -> Mirror 1 (Telescope Module Primary Mirror)
+- M2 -> M2 -> Mirror 2 (Telescope Module Secondary Mirror)
 - M3 -> M3 -> Mirror 3
 - M4 -> M4 -> Mirror 4
 - AOA -> AOA -> Aft-optics Assembly
@@ -332,6 +332,14 @@
 - UVS -> UVS -> Ultraviolet Spectrograph
 - IFS -> IFS -> Integral Field Spectrograph
 - ERD -> ERD -> Environmental Requirements Document
+- EP -> EP -> Telescope Entrance Pupil
+- HFOV -> HFOV -> Half Field of View
+- L3 -> L3 -> Telescope Module Collimating Lens
+- QKD -> QKD -> Quantum Key Distribution
+- XP -> XP -> Telescope Exit Pupil
+- TBC -> TBC -> To Be Confirmed
+- TBD -> TBD -> To Be Determined
+- TBR -> TBR -> To Be Reviewed
 
 ---------------------------------
 
