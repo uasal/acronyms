@@ -1,5 +1,5 @@
-# For converting acronym.tex file into an easy-to-read markdown file
-# Requires acronym.tex file to have appropriate line prefixes to work correctly.
+# For converting combined-acronyms.tex file into an easy-to-read markdown file
+# Requires combined-acronym.tex file to have appropriate line prefixes to work correctly.
 # Refer to the comment section within the acronym.tex file for details.
 
 # Created- 17-MAY-24
