@@ -3,7 +3,7 @@
 - Refer to the acronyms.tex file for making additional edits and updates to this sheet.
 
 ## Edit Notes & Information:
-- Modified- 17-MAY-24
+- Modified- 08-JUL-24
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
@@ -47,6 +47,7 @@
 - UA -> UA -> University of Arizona
 - UTIAS -> UTIAS -> University of Toronto Institute for Aerospace Studies
 - DIATF -> DIATF -> Drake Imager Assembly and Testing Facility
+- ETS -> ets -> Engineering Technical Services
 
 ---------------------------------
 
@@ -246,6 +247,8 @@
 - UASAL -> UASAL -> UArizona Space Astrophysics Lab
 - ITL -> ITL -> Imaging Technology Lab
 - TAO -> TAO -> Tokyo Atacama Observatory
+- LUVOIR -> LUVOIR -> Large UV Optical IR Surveyor
+- Roman -> Roman -> Nancy Grace Roman Space Telescope
 
 ---------------------------------
 
@@ -340,6 +343,7 @@
 - TBC -> TBC -> To Be Confirmed
 - TBD -> TBD -> To Be Determined
 - TBR -> TBR -> To Be Reviewed
+- EEIS -> EEIS -> end-to-end information systems
 
 ---------------------------------
 
