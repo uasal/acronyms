@@ -3,7 +3,7 @@
 - Refer to the acronyms.tex file for making additional edits and updates to this sheet.
 
 ## Edit Notes & Information:
-- Modified- 08-JUL-24
+- Modified- 22-AUG-24
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
