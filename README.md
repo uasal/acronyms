@@ -6,13 +6,12 @@ Rough script for generating a markdown file [combined-acronyms.md](combined-acro
 Results of the last latex to markdown conversion run shown below:
 ________________________________________________________________
 
-
 # Acronym Listing / Descriptions
 - Working list of active and past acronyms / abbreviations used for a variety of projects.
 - Refer to the acronyms.tex file for making additional edits and updates to this sheet.
 
 ## Edit Notes & Information:
-- Modified- 08-JUL-24
+- Modified- 22-AUG-24
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
