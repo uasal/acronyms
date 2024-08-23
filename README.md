@@ -1,15 +1,18 @@
 # UASAL / acronyms
-For storing the latest versions of acronyms for other repos to pull from. Contains original .tex files found in other repos and on Overleaf. New branch contained a combined acronyms.tex file instead of there being multiple as well as some new ones to add to the list that might be of use. Rough script for generating a markdown file from the combinded .tex acronyms file provided as well.
+For storing the latest versions of acronyms for other repos to pull from. Contains original .tex files found in other repos and on Overleaf which are stored in the [archives](/archives) directory. Previous acronym related tex files were combined into one [combined-acronyms.tex](combined-acronyms.tex) file to potential limit the duplication of acronyms being added to multiple latex files leading to issues in compiling in workflows.
+
+Rough script for generating a markdown file [combined-acronyms.md](combined-acronyms.md) from the [combined-acronyms.tex](combined-acronyms.tex) file provided as well but was a test script.
 
 Results of the last latex to markdown conversion run shown below:
 ________________________________________________________________
+
 
 # Acronym Listing / Descriptions
 - Working list of active and past acronyms / abbreviations used for a variety of projects.
 - Refer to the acronyms.tex file for making additional edits and updates to this sheet.
 
 ## Edit Notes & Information:
-- Modified- 17-MAY-24
+- Modified- 08-JUL-24
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
@@ -53,6 +56,7 @@ ________________________________________________________________
 - UA -> UA -> University of Arizona
 - UTIAS -> UTIAS -> University of Toronto Institute for Aerospace Studies
 - DIATF -> DIATF -> Drake Imager Assembly and Testing Facility
+- ETS -> ets -> Engineering Technical Services
 
 ---------------------------------
 
@@ -252,6 +256,8 @@ ________________________________________________________________
 - UASAL -> UASAL -> UArizona Space Astrophysics Lab
 - ITL -> ITL -> Imaging Technology Lab
 - TAO -> TAO -> Tokyo Atacama Observatory
+- LUVOIR -> LUVOIR -> Large UV Optical IR Surveyor
+- Roman -> Roman -> Nancy Grace Roman Space Telescope
 
 ---------------------------------
 
@@ -346,6 +352,7 @@ ________________________________________________________________
 - TBC -> TBC -> To Be Confirmed
 - TBD -> TBD -> To Be Determined
 - TBR -> TBR -> To Be Reviewed
+- EEIS -> EEIS -> end-to-end information systems
 
 ---------------------------------
 
