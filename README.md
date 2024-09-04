@@ -1,17 +1,25 @@
-# UASAL / acronyms
-For storing the latest versions of acronyms for other repos to pull from. Contains original .tex files found in other repos and on Overleaf which are stored in the [archives](/archives) directory. Previous acronym related tex files were combined into one [combined-acronyms.tex](combined-acronyms.tex) file to potential limit the duplication of acronyms being added to multiple latex files leading to issues in compiling in workflows.
+[![Markdown Acronym Workflow](https://github.com/sfrinaldi/acronyms-test/actions/workflows/md-workflow.yml/badge.svg)](https://github.com/sfrinaldi/acronyms-test/actions/workflows/md-workflow.yml)
 
-Rough script for generating a markdown file [combined-acronyms.md](combined-acronyms.md) from the [combined-acronyms.tex](combined-acronyms.tex) file provided as well but was a test script.
+# UASAL / Acronyms
+For storing the latest versions of acronyms for other repos to pull from. The [`combined-acronyms.tex`](combined-acronyms.tex) file was generating by using non-duplicate values from original .tex files found in other repos and on Overleaf. These can be viewed in the [archives](archives/) directory. The purpose of having one acronym.tex file instead of multiple is to limit issues with compiling latex documentation if there are duplicate listings. A rough script for generating a markdown file from the combinded .tex acronyms file provided as well.
 
-Results of the last latex to markdown conversion run shown below:
-________________________________________________________________
+## Editing Information
+- Apply updates to the [`combined-acronyms.tex`](combined-acronyms.tex) file. 
+- Update `Modified` section in [`combined-acronyms.tex`](combined-acronyms.tex) with the date you edited the file.
+- **VERIFY** added acronyms are not already within the dictionary as this will cause issues in latex generating repositories that use this repo for acronym pulling.
+  - Eventually, a check can be added to this repo for doing automatically. 
+- GitHub workflow will update this README.md files' markdown conversion run display and add a new [`combined-acronyms.md`](combined-acronyms.md) file with the adjustments.
+  - This format can be changed to a markdown table if of use in the future.
 
+**Results of the last latex to markdown conversion run shown below:**
+
+---------------------------------
 # Acronym Listing / Descriptions
 - Working list of active and past acronyms / abbreviations used for a variety of projects.
 - Refer to the acronyms.tex file for making additional edits and updates to this sheet.
 
 ## Edit Notes & Information:
-- Modified- 22-AUG-24
+- Modified- 04-SEP-24
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
@@ -35,7 +43,6 @@ ________________________________________________________________
 - mw -> MW -> Milky Way
 - epseri -> $\epsilon$ Eri -> Epsilon Eridani
 - EKB -> EKB -> Edgeworth-Kuiper Belt
-- sed -> sed -> spectral-energy distribution
 - CFR -> CFR -> Complete Frequency Redistribution
 
 ---------------------------------
@@ -65,7 +72,6 @@ ________________________________________________________________
 - Plural= CCDs, charge-coupled devices (CCDs) -> ccd -> CCD -> charge-coupled device
 - Plural= EMCCDs, electron multiplying charge-coupled devices (EMCCDs) -> EMCCD -> EMCCD -> electron multiplying charge-coupled device
 - DM -> DM -> Deformable Mirror
-- MCP -> MCP ->  Microchannel Plate 
 - ipc -> IPC -> Image Proportional Counter
 - cots -> COTS -> Commercial Off-The-Shelf
 - COTS -> COTS -> commercial off-the-shelf
@@ -96,17 +102,13 @@ ________________________________________________________________
 - LGS -> LGS -> laser guide star
 - WFCS -> WFCS -> wavefront control system
 - OPD -> OPD -> optical path difference
-- UA -> UA -> University of Arizona
 - MEL -> MEL -> Master Equipment List
-- LEO -> LEO -> low-earth orbit
-- GEO -> GEO -> geosynchronous orbit
 - EFC -> EFC -> electric-field conjugation
 - LDFC -> LDFC -> linear dark field control
 - DAC -> DAC -> digital-to-analog converter
 - TMA -> TMA -> three-mirror anastigmat
-- ESPA -> ESPA -> EELV Secondary Payload Adapter
-- EEID -> EEID -> Earth-equivalent Insolation Distance, the distance from the star where the incident energy density is that of the Earth received from the Sun
 - resel -> resel -> resolution element
+- BOM -> BOM -> Bill of Materials
 
 ---------------------------------
 
@@ -119,24 +121,16 @@ ________________________________________________________________
 - CFRP -> CRFP -> carbon fiber reinforced plastic
 - CDP -> CDP -> critical design phase
 - CDR -> CDR -> critical design review
-- MEL -> MEL -> Master Equipment List
 - LEO -> LEO -> low-earth orbit
 - GEO -> GEO -> geosynchronous orbit
-- RDI -> RDI -> reference-differential imaging
-- ADI -> ADI -> angular-differential imaging
-- LDFC -> LDFC -> linear dark field control
-- DAC -> DAC -> digital-to-analog converter
 - FEA -> FEA -> finite element analysis
 - ESPA -> ESPA -> EELV Secondary Payload Adapter
 - EEID -> EEID -> Earth-equivalent Insolation Distance, the distance from the star where the incident energy density is that of the Earth received from the Sun
-- LLOWFS -> LLOWFS -> Lyot low-order wavefront sensor
-- WFSC -> WFSC -> wavefront sensing and control
 - STOP -> STOP -> Structural-Thermal-Optical-Performance
 - STM -> STM -> science traceability matrix
 - ConOps -> ConOps -> concept of operations
 - NRE -> NRE -> non-recurring engineering
 - CSR -> CSR -> concept study report
-- ir -> ir -> infrared
 - XAO -> XAO -> extreme-adaptive optics
 - AT -> AT -> angle tracking camera
 - SRR -> SRR -> system requirements review
@@ -168,7 +162,6 @@ ________________________________________________________________
 - HLC -> HLC -> Hybrid-Lyot Coronagraph
 - ADI -> ADI -> angular differential imaging
 - RDI -> RDI -> reference differential imaging
-- LOWFSC -> LOWFS/C -> low-order wavefront sensing and control
 - HOWFSC -> HOWFS/C -> high-order wavefront sensing and control
 - WFSC -> WFSC -> wavefront sensing and control
 - CDI -> CDI -> coherent differential imaging
@@ -178,7 +171,6 @@ ________________________________________________________________
 - TDEM -> TDEM -> Technology Development for Exoplanet Missions
 - HZ -> HZ -> habitable zone
 - ODI -> ODI -> orbital-differential imaging
-- EFC -> EFC -> electric-field conjugation
 - PSFTFC -> PSFTFC -> PSF template subtracted coronagraphy
 - LOWFSC -> LOWFSC -> Low-order -> Lower-Case= WFS -> and control
 - scoob -> SCoOB -> Space Coronagraph Optical Bench
@@ -223,9 +215,7 @@ ________________________________________________________________
 - GPI -> GPI -> Gemini Planet Imager
 - WFIRST -> Roman -> Nancy Grace Roman Space Telescope
 - HabEx -> HabEx -> Habitable Exoplanet Observatory Mission Concept
-- LUVOIR -> LUVOIR -> Large UV/Optical/Infrared Surveyor
 - FGS -> FGS -> Fine Guidance Sensor
-- STIS -> STIS -> Space Telescope Imaging Spectrograph
 - MGHPCC -> MGHPCC -> Massachusetts Green High Performance Computing Center
 - WISE -> WISE -> Wide-field Infrared Survey Explorer
 - ALMA -> ALMA -> Atacama Large Millimeter Array
@@ -237,17 +227,16 @@ ________________________________________________________________
 - STP -> HLST -> Hypothetical Large Space Telescopes
 - CDEEP -> ESC -> STP ExtraSolar Camera, a Coronagraphic Pathfinder
 - ESC -> ESC -> ExtraSolar Camera
-- CCS -> WCC -> wavefront and context camera
-- WCC -> WCC -> wavefront and context camera
+- CCS -> WCC -> Wavefront and Context Camera
+- WCC -> WCC -> Wavefront and Context Camera
 - LSST -> LSST -> Large Synoptic Survey Telescope
 - M1 -> M1 -> Mirror 1 (Telescope Module Primary Mirror)
 - M2 -> M2 -> Mirror 2 (Telescope Module Secondary Mirror)
 - M3 -> M3 -> Mirror 3
 - M4 -> M4 -> Mirror 4
-- AOA -> AOA -> Aft-optics Assembly
-- FOA -> FOA -> Fore-optics Assembly
+- AOA -> AOA -> Aft-Optics Assembly
+- FOA -> FOA -> Fore-Optics Assembly
 - AOSS -> AOSS -> Aft-optics Support Structure
-- JWST -> JWST -> JWST
 - MMTO -> MMTO -> MMT Observatory
 - MMT -> MMT -> Multiple Mirror Telescope
 - PMCC -> PMCC -> primary mirror (M1) control computer
@@ -255,14 +244,15 @@ ________________________________________________________________
 - UASAL -> UASAL -> UArizona Space Astrophysics Lab
 - ITL -> ITL -> Imaging Technology Lab
 - TAO -> TAO -> Tokyo Atacama Observatory
-- LUVOIR -> LUVOIR -> Large UV Optical IR Surveyor
-- Roman -> Roman -> Nancy Grace Roman Space Telescope
+- UVS -> UVS -> Ultraviolet Spectrograph
+- IFS -> IFS -> Integral Field Spectrograph
+
 
 ---------------------------------
 
 ## Software:
 
-- AURIC -> AURIC -> The Atmospheric Ultraviolet Radiance Integrated Code -> 
+- AURIC -> AURIC -> The Atmospheric Ultraviolet Radiance Integrated Code
 - FFT -> FFT -> Fast Fourier Transform  
 - MODTRAN -> MODTRAN    ->  MODerate resolution atmospheric TRANsmission 
 - idl -> IDL -> *Interactive Data Language
@@ -305,15 +295,13 @@ ________________________________________________________________
 - NUV -> NUV -> near-ultraviolet 
 - nir -> NIR -> near-infrared
 - mir -> MIR -> mid-infrared
-- ir -> IR -> infrared
-- uv -> UV -> ultraviolet
+- UV -> UV -> ultraviolet
 - O^+ -> O^+ -> Singly Ionized Oxygen  Atom 
 - OI -> OI -> Neutral Atomic Oxygen Spectroscopic State 
 - OII -> OII -> Singly Ionized Atomic Oxygen Spectroscopic State 
 - PSF -> PSF -> point spread function
 - R_E -> R_E -> Earth radii [~ 6400 km]  
 - RV -> RV -> radial velocity
-- UV -> UV -> ultraviolet 
 - WFE -> WFE -> wavefront error
 - sed -> SED -> spectral energy distribution
 - Plural= PAHs, Polycyclic Aromatic Hydrocarbons (PAHs) -> pah -> PAH -> Polycyclic Aromatic Hydrocarbon
@@ -321,7 +309,7 @@ ________________________________________________________________
 - SZA -> SZA -> Solar Zenith Angle
 - DOF -> DOF -> degrees-of-freedom
 - PZT -> PZT -> lead zirconate titanate
-- AIT -> AIT -> assembly, integration and test
+- AIT -> AIT -> Assembly, Integration and Test
 - CPR -> CPR -> cost performance report
 - FDR -> FDR -> final design review
 - DHS -> DHS -> data handling system
@@ -340,8 +328,6 @@ ________________________________________________________________
 - KISS -> KISS -> keep it sans spectrometer
 - CIDL -> CIDL -> configuration item data list
 - ICD -> ICD -> interface control document
-- UVS -> UVS -> Ultraviolet Spectrograph
-- IFS -> IFS -> Integral Field Spectrograph
 - ERD -> ERD -> Environmental Requirements Document
 - EP -> EP -> Telescope Entrance Pupil
 - HFOV -> HFOV -> Half Field of View
@@ -351,7 +337,16 @@ ________________________________________________________________
 - TBC -> TBC -> To Be Confirmed
 - TBD -> TBD -> To Be Determined
 - TBR -> TBR -> To Be Reviewed
-- EEIS -> EEIS -> end-to-end information systems
+- EEIS -> EEIS -> End-to-End Information Systems
+- EA -> EA -> Executing Agent
+- SPGD -> SPGD -> Stochastic Parallel Gradient Descent
+- TAM -> TAM -> Test Allocation Matrix
+- CCP -> CCP -> Contamination Control Plan
+- VC -> VC -> Visualy Clean
+- VC-S -> VC-S -> Visualy Clean Sensitive
+- VC-HS -> VC-HS -> Visualy Clean High Sensitive
+- PAC -> PAC -> Percent Area Coverage
+- ATLO -> ATLO -> Assembly Test, and Launch Operations
 
 ---------------------------------
 

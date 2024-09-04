@@ -1,0 +1,46 @@
+# Converts latex acronym format to a rough markdown template for easier viewing
+name: Markdown Acronym Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    types: [opened, reopened, edited, synchronize]
+  workflow_dispatch:
+
+# Runs script and uploads new version if in main for markdown output
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Action
+        uses: actions/checkout@v4
+
+      - name: Run Script
+        run: |
+          rm -f combined-acronyms.md
+          python utilities/latex_acronyms-to-markdown.py
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        # Upload even if it fails to better see issues
+        if: always()
+        with:
+          name: Markdown Acronyms
+          path: combined-acronyms.md
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
+
+      - name: Update Files
+        #if: ${{ github.ref == 'refs/heads/main'}}
+        run: |
+          git fetch                         # fetch branches
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add .
+          git diff-index --quiet HEAD ||  git commit -m "update markdown acronyms"  # commit to the repository (ignore if no modification)
+          git push # push to remote branch
