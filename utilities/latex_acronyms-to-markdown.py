@@ -1,10 +1,12 @@
 # For converting combined-acronyms.tex file into an easy-to-read markdown file
 # Requires combined-acronym.tex file to have appropriate line prefixes to work correctly.
 # Refer to the comment section within the acronym.tex file for details.
+# Potential plans to have this as a checker for acronyms.tex for verifying duplicate entries to prevent issues in
+# Latex Generating Repositories that pull from this repo / use it as a submodule.
 
 # Created- 17-MAY-24
 # Author- SFR
-# Last Modified- 17-MAY-24
+# Last Modified- 04-SEP-24
 # Status- Draft
 
 # Package Imports
@@ -54,4 +56,4 @@ input_File.close()
 readme_File.close()
 output_File.close()
 
-print("Markdown Draft Created")
+print("Combined-acronyms.md file created. README.md updated.")
