@@ -15,43 +15,32 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout action
+      - name: Checkout Action
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
-
-      - name: Python Setup
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-
-      - name: Cache Install
-        run: |
-          pip install --upgrade pip
-          pip install pandoc
 
       - name: Run Script
-        run: python utilities/latex_acronyms-to-markdown.py
+        run: |
+          rm -f combined-acronyms.md
+          python utilities/latex_acronyms-to-markdown.py
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         # Upload even if it fails to better see issues
         if: always()
         with:
-          name: Markdown-Acronyms
+          name: Markdown Acronyms
           path: combined-acronyms.md
 
       - name: Extract branch name
         shell: bash
-        run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_EN
+        run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
 
       - name: Update Files
-        if: ${{ github.ref == 'refs/heads/main'}}
+        #if: ${{ github.ref == 'refs/heads/main'}}
         run: |
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add .
           git diff-index --quiet HEAD ||  git commit -m "update markdown acronyms"  # commit to the repository (ignore if no modification)
-          git push origin ${{ env.branch_name }} # push to remote branch
+          git push # push to remote branch
