@@ -22,7 +22,7 @@ def replace_all(text, dic):
 
 # Variables
 output_File = open("combined-acronyms.md", "a+")
-input_File = open("combined-acronyms.tex", "r")
+input_File = open("combined_acronyms.tex", "r")
 info_File = open("utilities/info.md", "r")
 readme_File = open("README.md", "w")
 replacements = {"%%+": "##", "%+": "#", "%%": "-", "%": "##", "\\newacronym{": "- ", "$\\textit{": "*", "\\newacronym[": "- ", "plural=": "Plural= ", " firstPlural=": "", "$^{": "^", "{\\gls{": "-> Lower-Case: ","\\gls{": "-> Lower-Case= ", "/\\gls{": "-> Lower-Case: ", "$\\approx$": "~", "description=": "Description= ", "$\\&$": "&", "]{": " -> ", "} ":" -> ", "[p": "P", "$": "", "}{": " -> ", "}": "", "\\epsilon": "$\\epsilon$"}
