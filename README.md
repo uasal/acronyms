@@ -19,7 +19,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - Refer to the acronyms.tex file for making additional edits and updates to this sheet.
 
 ## Edit Notes & Information:
-- Modified- 04-SEP-24
+- Modified- 20240910 (YYYYMMDD)
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
@@ -32,6 +32,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - nm -> nm -> nanometer
 - CTE -> CTE -> coefficient of thermal expansion
 - sqarc -> as^2 -> square arcsecond
+- ppm -> ppm -> Part Per Million
 
 ---------------------------------
 
@@ -63,6 +64,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - UTIAS -> UTIAS -> University of Toronto Institute for Aerospace Studies
 - DIATF -> DIATF -> Drake Imager Assembly and Testing Facility
 - ETS -> ets -> Engineering Technical Services
+- ASTM -> ASTM -> American Society for Testing and Materials
 
 ---------------------------------
 
@@ -247,7 +249,6 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - UVS -> UVS -> Ultraviolet Spectrograph
 - IFS -> IFS -> Integral Field Spectrograph
 
-
 ---------------------------------
 
 ## Software:
@@ -285,29 +286,28 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - isr -> ISR -> Incoherent Scatter Radar
 - Description= TLA Within Another Acronym -> twaa -> TWAA-> Lower-Case: tla -> Within Another Acronym
 - Plural= SNe, Supernovae (SNe) -> sn -> SN -> Supernova
-- EUV -> EUV -> Extreme-Ultraviolet 
+- EUV -> EUV -> Extreme-Ultraviolet
 - EUVS -> EUVS-> Lower-Case: EUV -> Spectrograph
-- F2 -> F2 -> Ionospheric Chapman F Layer 
+- F2 -> F2 -> Ionospheric Chapman F Layer
 - F10.7 -> F10.7 ->  10.7 cm radio flux [10^-22 W m^-2 Hz^-1]  
-- FUV -> FUV -> far-ultraviolet 
+- FUV -> FUV -> far-ultraviolet
 - IR -> IR -> infrared
 - MUV -> MUV -> mid-ultraviolet 
-- NUV -> NUV -> near-ultraviolet 
+- NUV -> NUV -> near-ultraviolet
 - nir -> NIR -> near-infrared
 - mir -> MIR -> mid-infrared
 - UV -> UV -> ultraviolet
-- O^+ -> O^+ -> Singly Ionized Oxygen  Atom 
-- OI -> OI -> Neutral Atomic Oxygen Spectroscopic State 
-- OII -> OII -> Singly Ionized Atomic Oxygen Spectroscopic State 
+- O^+ -> O^+ -> Singly Ionized Oxygen  Atom
+- OI -> OI -> Neutral Atomic Oxygen Spectroscopic State
+- OII -> OII -> Singly Ionized Atomic Oxygen Spectroscopic State
 - PSF -> PSF -> point spread function
-- R_E -> R_E -> Earth radii [~ 6400 km]  
+- R_E -> R_E -> Earth radii [~ 6400 km] 
 - RV -> RV -> radial velocity
 - WFE -> WFE -> wavefront error
 - sed -> SED -> spectral energy distribution
 - Plural= PAHs, Polycyclic Aromatic Hydrocarbons (PAHs) -> pah -> PAH -> Polycyclic Aromatic Hydrocarbon
 - obsid -> OBSID -> Observation Identification
 - SZA -> SZA -> Solar Zenith Angle
-- DOF -> DOF -> degrees-of-freedom
 - PZT -> PZT -> lead zirconate titanate
 - AIT -> AIT -> Assembly, Integration and Test
 - CPR -> CPR -> cost performance report
@@ -347,6 +347,20 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - VC-HS -> VC-HS -> Visualy Clean High Sensitive
 - PAC -> PAC -> Percent Area Coverage
 - ATLO -> ATLO -> Assembly Test, and Launch Operations
+- QA -> QA -> Quality Assurance
+- UUT -> UUT -> Unit Under Test
+- P/N -> P/N -> Part Number
+- ESD -> ESD -> Electro-static Discharge
+- AC -> AC -> Alternating Current
+- RH -> RH -> Relative Humidity
+- RGA -> RGA -> Residual Gas Analyzer
+
+---------------------------------
+
+## Material Abbreviations
+
+- PVC -> PVC -> Polyvinyl Chloride
+- PTFE -> PTFE -> Polytetrafluoroethylene (Teflon)
 
 ---------------------------------
 
@@ -361,5 +375,6 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - SNR -> SNR -> signal-to-noise ratio
 - PSD -> PSD -> power spectral density
 - NMF -> NMF -> non-negative matrix factorization
+- DOF -> DOF -> degrees-of-freedom
 
 
