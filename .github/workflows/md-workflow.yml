@@ -4,7 +4,7 @@ name: Markdown Acronym Workflow
 on:
   push:
     branches:
-      - develop
+      - main
   pull_request:
     types: [opened, reopened, edited, synchronize]
   workflow_dispatch:
@@ -35,7 +35,7 @@ jobs:
         run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
 
       - name: Update Files
-        if: ${{ github.ref == 'refs/heads/develop'}}
+        if: ${{ github.ref == 'refs/heads/main'}}
         run: |
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
