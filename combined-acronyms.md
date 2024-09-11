@@ -232,6 +232,7 @@
 - TAO -> TAO -> Tokyo Atacama Observatory
 - UVS -> UVS -> Ultraviolet Spectrograph
 - IFS -> IFS -> Integral Field Spectrograph
+- STIS -> STIS -> Space Telescope Imaging Spectrograph
 
 ---------------------------------
 
@@ -275,7 +276,8 @@
 - F2 -> F2 -> Ionospheric Chapman F Layer
 - F10.7 -> F10.7 ->  10.7 cm radio flux [10^-22 W m^-2 Hz^-1]  
 - FUV -> FUV -> far-ultraviolet
-- IR -> IR -> infrared
+- ir -> IR -> infrared
+- IR -> ir -> infrared
 - MUV -> MUV -> mid-ultraviolet 
 - NUV -> NUV -> near-ultraviolet
 - nir -> NIR -> near-infrared
