@@ -340,6 +340,11 @@
 - AC -> AC -> Alternating Current
 - RH -> RH -> Relative Humidity
 - RGA -> RGA -> Residual Gas Analyzer
+- esds -> ESDS -> ESD Sensitive
+- dmm -> DMM -> Digital Multimeter
+- DC -> DC -> Direct Current
+- CPG -> CPG -> Common Point Ground
+
 
 ---------------------------------
 
