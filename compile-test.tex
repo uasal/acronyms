@@ -1,0 +1,96 @@
+%! Author = srinaldi
+%! Date = 9/24/2024
+
+% Preamble
+\documentclass[12pt]{book}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[toc]{glossaries}
+\usepackage[automake]{glossaries-extra}
+\usepackage{gitinfo2}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{longtable}
+
+% Glossary settings / loading
+\loadglsentries[\acronymtype]{combined_acronyms.tex}
+\loadglsentries[term]{glossaries.tex}
+\makeglossaries
+
+% Set Variables
+\def\title{LaTeX Compiling Test}
+\def\subtitle{Verifying acronyms and glossaries entries made in .tex files compile correctly.}
+\def\repourl{\url{https://github.com/uasal/acronyms/tree/main}}
+
+\edef\masterBranch{\detokenize{master}}
+\edef\gitBranch{\gitBranch}
+
+% Setup internal link colors
+\hypersetup{%
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+	filecolor=blue,
+	linktoc=all,
+	citecolor=blue,
+}
+
+
+% Pagestyles
+\cfoot{\thepage\n }
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Rev: \gitAbbrevHash- \gitDirty\, \gitCommitterDate}
+\fancyhead[RE,LO]{LaTeX Acronyms \& Terms, Page \thepage}
+\fancyfoot[CE,CO]{\rightmark}
+\setlength{\headheight}{14.49998pt}
+\addtolength{\topmargin}{-2.49998pt}
+%\fancyfoot[LE,RO]{}
+\topskip0pt
+
+
+% Document
+\begin{document}
+
+    % Making Title Page
+    \renewcommand{\maketitle}{
+	\pagestyle{empty}
+	\thispagestyle{empty}
+	%--- Make title page
+	\begin{center}
+		\vspace{0.5cm} \mbox{}\hrulefill \mbox{}\\[1cm]
+     		{\Huge \textbf{\title}\\[1cm]}
+     		{\LARGE \textit{\subtitle}}\\[2cm]
+			%{\small \textbf{Teledoc Link: }\textit{\teledoc}}\\[0.3cm]
+            {\small \textbf{Repository: }\textit{\repourl}}\\[0.5cm]
+			{\small \textbf{Branch: } \gitBranch}
+			{\small \textbf{  |  Commit:} \gitDescribe}\\[0.5cm]
+     		%{\small \textit{\access}} \vfill
+     		{\small \mbox{}\hrulefill\mbox{}\\[10mm]}
+            \footnote{{ Revision: \gitAbbrevHash - \gitDirty\ Date: \gitCommitterDate}}
+  	\end{center}
+	\pagestyle{fancy}
+}
+
+    \maketitle
+	\newpage
+
+    \setcounter{secnumdepth}{4}
+    \setcounter{tocdepth}{2}
+    \tableofcontents
+
+	\chapter{Overview}
+    Testing acronyms and glossary entries.
+
+	\chapter{List of Terms and Abbreviations}
+	\setglossarysection{section}
+	\printglossary[type=\acronymtype]
+	\printglossary[type=term]
+%\printglossary[type=\acronymtype]
+%\glsaddallunused[\acronymtype]
+
+	Fin.
+
+\end{document}
