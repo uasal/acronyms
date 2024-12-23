@@ -160,6 +160,7 @@
 - PSFTFC -> PSFTFC -> PSF template subtracted coronagraphy
 - LOWFSC -> LOWFSC -> Low-order -> Lower-Case= WFS -> and control
 - scoob -> SCoOB -> Space Coronagraph Optical Bench
+- FDPR -> FDPR -> focus diversity phase retrieval
 
 ---------------------------------
 

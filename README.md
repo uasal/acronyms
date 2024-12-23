@@ -176,6 +176,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - PSFTFC -> PSFTFC -> PSF template subtracted coronagraphy
 - LOWFSC -> LOWFSC -> Low-order -> Lower-Case= WFS -> and control
 - scoob -> SCoOB -> Space Coronagraph Optical Bench
+- FDPR -> FDPR -> focus diversity phase retrieval
 
 ---------------------------------
 
