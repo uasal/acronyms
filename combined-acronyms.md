@@ -235,6 +235,7 @@
 - UVS -> UVS -> Ultraviolet Spectrograph
 - IFS -> IFS -> Integral Field Spectrograph
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
+- SCoOB -> scoob -> space-coronagraph optical bench
 
 ---------------------------------
 
