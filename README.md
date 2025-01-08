@@ -178,7 +178,6 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - LOWFSC -> LOWFSC -> Low-order -> Lower-Case= WFS -> and control
 - scoob -> SCoOB -> Space Coronagraph Optical Bench
 - FDPR -> FDPR -> focus diversity phase retrieval
-- ZIF -> ZIF -> zero insertion force
 
 ---------------------------------
 
