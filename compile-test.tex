@@ -1,12 +1,12 @@
 %! Author = srinaldi
-%! Date = 9/24/2024
+%! Date = 2025-01-08 (YYYY-MM-DD)
 
 % Preamble
 \documentclass[12pt]{book}
 
 % Packages
 \usepackage{amsmath}
-\usepackage[toc]{glossaries}
+\usepackage[toc,acronym,nonumberlist]{glossaries}
 \usepackage[automake]{glossaries-extra}
 \usepackage{gitinfo2}
 \usepackage{hyperref}
@@ -15,14 +15,18 @@
 \usepackage{longtable}
 
 % Glossary settings / loading
-\loadglsentries[\acronymtype]{combined_acronyms.tex}
+%\loadglsentries[\acronymtype]{combined_acronyms.tex}
+\newglossary*{term}{Terms}
 \loadglsentries[term]{glossaries.tex}
+%\loadglsentries[\acronymtype]{glossaries.tex}
 \makeglossaries
 
 % Set Variables
-\def\title{LaTeX Compiling Test}
-\def\subtitle{Verifying acronyms and glossaries entries made in .tex files compile correctly.}
+\def\title{Acronym Reference Sheet}
+\def\subtitle{LaTeX Compiled Acronym and Glossary Entries}
+\def\info{Used for testing if entries can compile correctly in advance and as a user-friendly output reference sheet.}
 \def\repourl{\url{https://github.com/uasal/acronyms/tree/main}}
+\def\teledoc{PLACEHOLDER}
 
 \edef\masterBranch{\detokenize{master}}
 \edef\gitBranch{\gitBranch}
@@ -36,7 +40,6 @@
 	linktoc=all,
 	citecolor=blue,
 }
-
 
 % Pagestyles
 \cfoot{\thepage\n }
@@ -62,9 +65,10 @@
 	\begin{center}
 		\vspace{0.5cm} \mbox{}\hrulefill \mbox{}\\[1cm]
      		{\Huge \textbf{\title}\\[1cm]}
-     		{\LARGE \textit{\subtitle}}\\[2cm]
-			%{\small \textbf{Teledoc Link: }\textit{\teledoc}}\\[0.3cm]
-            {\small \textbf{Repository: }\textit{\repourl}}\\[0.5cm]
+     			{\Large \textit{\subtitle}}\\[3cm]
+			{\large \textit{\info}}\\[5cm]
+			{\small \textbf{Teledoc Link: }\textit{\teledoc}}\\[0.3cm]
+            		{\small \textbf{Repository: }\textit{\repourl}}\\[0.5cm]
 			{\small \textbf{Branch: } \gitBranch}
 			{\small \textbf{  |  Commit:} \gitDescribe}\\[0.5cm]
      		%{\small \textit{\access}} \vfill
@@ -74,23 +78,21 @@
 	\pagestyle{fancy}
 }
 
-    \maketitle
-	\newpage
+\maketitle
+%\newpage
 
-    \setcounter{secnumdepth}{4}
-    \setcounter{tocdepth}{2}
-    \tableofcontents
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{2}
+\tableofcontents
+	
+\input{combined_acronyms.tex}
+\setglossarysection{section}
+\glsaddall
+\chapter{Acronyms}
+\printglossary[type=\acronymtype]
+\chapter{Glossary}
+\printglossary[type=term]
 
-	\chapter{Overview}
-    Testing acronyms and glossary entries.
-
-	\chapter{List of Terms and Abbreviations}
-	\setglossarysection{section}
-	\printglossary[type=\acronymtype]
-	\printglossary[type=term]
-%\printglossary[type=\acronymtype]
-%\glsaddallunused[\acronymtype]
-
-	Fin.
+Fin.
 
 \end{document}

@@ -4,7 +4,7 @@ name: Markdown Acronym Workflow
 on:
   push:
     branches:
-      - develop
+      - main
   pull_request:
     types: [opened, reopened, edited, synchronize]
   workflow_dispatch:
@@ -17,25 +17,41 @@ jobs:
       - name: Checkout Action
         uses: actions/checkout@v4
 
-      - name: Run Script
+      - name: Import Libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-xetex texlive-fonts-recommended texlive-fonts-extra texlive-lang-greek
+
+      - name: Run Markdown Script
         run: |
           rm -f combined-acronyms.md
           python utilities/latex_acronyms-to-markdown.py
 
-      - name: Upload Artifacts
+      - name: Upload Markdown Artifact
         uses: actions/upload-artifact@v4
         # Upload even if it fails to better see issues
         if: always()
         with:
-          name: Markdown Acronyms
+          name: Markdown-Acronyms
           path: combined-acronyms.md
+
+      - name: Run LaTeX Script
+        run: bash compile-test.sh
+
+      - name: Upload LaTeX Artifact
+        uses: actions/upload-artifact@v4
+        # Upload even if it fails to better see issues
+        if: always()
+        with:
+          name: Latex-Acronyms-PDF
+          path: compile-test.pdf
 
       - name: Extract branch name
         shell: bash
         run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
 
       - name: Update Files
-        if: ${{ github.ref == 'refs/heads/develop'}}
+        if: ${{ github.ref == 'refs/heads/main'}}
         run: |
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
