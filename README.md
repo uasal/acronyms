@@ -106,6 +106,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - OPD -> OPD -> optical path difference
 - MEL -> MEL -> Master Equipment List
 - EFC -> EFC -> electric-field conjugation
+- iEFC -> EFC -> implicit -> Lower-Case= EFC
 - LDFC -> LDFC -> linear dark field control
 - DAC -> DAC -> digital-to-analog converter
 - TMA -> TMA -> three-mirror anastigmat
