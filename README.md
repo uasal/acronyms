@@ -19,7 +19,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - Refer to the acronyms.tex file for making additional edits and updates to this sheet.
 
 ## Edit Notes & Information:
-- Modified- 20240910 (YYYYMMDD)
+- Modified- 20240924 (YYYYMMDD)
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
@@ -106,6 +106,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - OPD -> OPD -> optical path difference
 - MEL -> MEL -> Master Equipment List
 - EFC -> EFC -> electric-field conjugation
+- iEFC -> EFC -> implicit -> Lower-Case= EFC
 - LDFC -> LDFC -> linear dark field control
 - DAC -> DAC -> digital-to-analog converter
 - TMA -> TMA -> three-mirror anastigmat
@@ -176,6 +177,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - PSFTFC -> PSFTFC -> PSF template subtracted coronagraphy
 - LOWFSC -> LOWFSC -> Low-order -> Lower-Case= WFS -> and control
 - scoob -> SCoOB -> Space Coronagraph Optical Bench
+- FDPR -> FDPR -> focus diversity phase retrieval
 
 ---------------------------------
 
@@ -249,6 +251,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - UVS -> UVS -> Ultraviolet Spectrograph
 - IFS -> IFS -> Integral Field Spectrograph
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
+- SCoOB -> scoob -> space-coronagraph optical bench
 
 ---------------------------------
 
@@ -270,6 +273,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - CAD -> CAD -> computer-aided design
 - DBMS -> DBMS -> database management system
 - POPPY -> POPPY -> Physical Optics Propagation in Python
+- SOEDMS -> SOEDMS -> Steward Observatory Electronic Data Management System
 
 ---------------------------------
 
@@ -356,6 +360,17 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - AC -> AC -> Alternating Current
 - RH -> RH -> Relative Humidity
 - RGA -> RGA -> Residual Gas Analyzer
+- esds -> ESDS -> ESD Sensitive
+- dmm -> DMM -> Digital Multimeter
+- DC -> DC -> Direct Current
+- CPG -> CPG -> Common Point Ground
+- WM -> WM -> Workmanship Manual
+- N/A -> N/A -> Not Applicable
+- na -> NA -> Not Applicable
+- MM -> MM -> Machine Model [for electrostatic discharge]
+- LVDS -> LVDS -> Low-Voltage Differential Signal
+- LNA -> LNA -> Low Noise Amplifier
+
 
 ---------------------------------
 
