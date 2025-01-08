@@ -90,6 +90,7 @@
 - OPD -> OPD -> optical path difference
 - MEL -> MEL -> Master Equipment List
 - EFC -> EFC -> electric-field conjugation
+- iEFC -> EFC -> implicit -> Lower-Case= EFC
 - LDFC -> LDFC -> linear dark field control
 - DAC -> DAC -> digital-to-analog converter
 - TMA -> TMA -> three-mirror anastigmat
@@ -160,6 +161,7 @@
 - PSFTFC -> PSFTFC -> PSF template subtracted coronagraphy
 - LOWFSC -> LOWFSC -> Low-order -> Lower-Case= WFS -> and control
 - scoob -> SCoOB -> Space Coronagraph Optical Bench
+- FDPR -> FDPR -> focus diversity phase retrieval
 
 ---------------------------------
 
