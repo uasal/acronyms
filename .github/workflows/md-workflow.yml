@@ -56,6 +56,7 @@ jobs:
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add .
-          git diff-index --quiet HEAD ||  git commit -m "update markdown acronyms"  # commit to the repository (ignore if no modification)
+          git add combined-acronyms.md
+          git add compile-test.pdf
+          git diff-index --quiet HEAD ||  git commit -m "update markdown and latex acronym outputs"  # commit to the repository (ignore if no modification)
           git push # push to remote branch
