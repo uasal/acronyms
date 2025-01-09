@@ -19,7 +19,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - Refer to the acronyms.tex file for making additional edits and updates to this sheet.
 
 ## Edit Notes & Information:
-- Modified- 20240924 (YYYYMMDD)
+- Modified- 20240125 (YYYYMMDD)
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
@@ -296,8 +296,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - F2 -> F2 -> Ionospheric Chapman F Layer
 - F10.7 -> F10.7 ->  10.7 cm radio flux [10^-22 W m^-2 Hz^-1]  
 - FUV -> FUV -> far-ultraviolet
-- ir -> IR -> infrared
-- IR -> ir -> infrared
+- IR -> IR -> infrared
 - MUV -> MUV -> mid-ultraviolet 
 - NUV -> NUV -> near-ultraviolet
 - nir -> NIR -> near-infrared
