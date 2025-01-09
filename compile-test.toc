@@ -1,4 +1,0 @@
-\contentsline {chapter}{\numberline {1}Acronyms}{5}{chapter.1}%
-\contentsline {section}{Acronyms}{5}{section*.2}%
-\contentsline {chapter}{\numberline {2}Glossary}{19}{chapter.2}%
-\contentsline {section}{Terms}{19}{section*.4}%
