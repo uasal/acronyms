@@ -1,9 +1,11 @@
 # Acronym Listing / Descriptions
 - Working list of active and past acronyms / abbreviations used for a variety of projects.
-- Refer to the acronyms.tex file for making additional edits and updates to this sheet.
+- Refer to the combined-acronyms.tex file for making additional edits and updates to this sheet.
+- Refer to the glossaries.tex file for adding additional terms to the glossary that are not acronyms.
+- Use the format `- label -> ABBREVIATION -> long-form of the term' for adding new acronyms.
 
 ## Edit Notes & Information:
-- Modified- 20240125 (YYYYMMDD)
+- Modified- 20250218 (YYYYMMDD)
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 
 ---------------------------------
@@ -212,7 +214,9 @@
 - jwstMIRI -> MIRI -> Mid-Infrared Instrument
 - LUVOIR -> LUVOIR -> Large UV Optical IR Surveyor
 - Roman -> Roman -> Nancy Grace Roman Space Telescope
-- STP -> HLST -> Hypothetical Large Space Telescopes
+- STP -> STP -> Space Telescope Pathfinder
+- UM -> UM -> Ultramarine
+- HLST -> HLST -> Hypothetical Large Space Telescopes
 - CDEEP -> ESC -> STP ExtraSolar Camera, a Coronagraphic Pathfinder
 - ESC -> ESC -> ExtraSolar Camera
 - CCS -> WCC -> Wavefront and Context Camera
