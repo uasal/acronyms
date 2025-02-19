@@ -58,5 +58,6 @@ jobs:
           git config --global user.email 'action@github.com'
           git add combined-acronyms.md
           git add compile-test.pdf
+          git add README.md
           git diff-index --quiet HEAD ||  git commit -m "update markdown and latex acronym outputs"  # commit to the repository (ignore if no modification)
           git push # push to remote branch
