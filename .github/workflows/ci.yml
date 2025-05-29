@@ -53,14 +53,31 @@ jobs:
         shell: bash
         run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
 
-      - name: Update Files
-        if: ${{ github.ref == 'refs/heads/main'}}
+      - name: Update README.md
+        if: ${{ github.ref != 'refs/heads/main'}}
         run: |
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add combined-acronyms.md
-          git add compile-test.pdf
+          # git add uasal-acronyms.md
+          # git add compiled-acronyms.pdf
           git add README.md
-          git diff-index --quiet HEAD ||  git commit -m "update markdown and latex acronym outputs"  # commit to the repository (ignore if no modification)
+          git diff-index --quiet HEAD ||  git commit -m "Updating README.md for markdown adjustments"  # commit to the repository (ignore if no modification)
           git push # push to remote branch
+
+
+      - name: Update Compiled Branch
+        if: ${{ github.ref == 'refs/heads/main'}}
+        run: |
+          git fetch origin compiled  --recurse-submodules=no  
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git branch --track compiled origin/compiled        
+          mkdir output
+          git worktree add output compiled                     
+          mv uasal-acronyms.md  output/uasal-acronyms.md
+          mv compiled-acronyms.pdf output/compiled-acronyms.pdf
+          cd output                                            
+          git add .                                         
+          git commit -m "Compiled documents created w/CI on main"                          
+          git push  
