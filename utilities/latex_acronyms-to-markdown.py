@@ -1,13 +1,12 @@
-# For converting combined-acronyms.tex file into an easy-to-read markdown file
-# Requires combined-acronym.tex file to have appropriate line prefixes to work correctly.
-# Refer to the comment section within the acronym.tex file for details.
-# Potential plans to have this as a checker for acronyms.tex for verifying duplicate entries to prevent issues in
-# Latex Generating Repositories that pull from this repo / use it as a submodule.
+# For converting uasal-acronyms.tex file into an easy-to-read markdown file
+# Requires uasal-acronym.tex file to have appropriate line prefixes to work correctly.
+# Refer to the comment section within the uasal-acronym.tex file for details.
+# CI checker for uasal-acronyms.tex has been implemented for verifying duplicate entries where this will result in an error in
+# Latex Generating Repositories that pull from this repo and/or use it as a submodule.
 
 # Created- 17-MAY-24
 # Author- SFR
-# Last Modified- 04-SEP-24
-# Status- Draft
+# Last Modified- 28-MAY-25
 
 # Package Imports
 import os
@@ -21,8 +20,8 @@ def replace_all(text, dic):
 
 
 # Variables
-output_File = open("combined-acronyms.md", "a+")
-input_File = open("combined_acronyms.tex", "r")
+output_File = open("uasal-acronyms.md", "a+")
+input_File = open("uasal_acronyms.tex", "r")
 info_File = open("utilities/info.md", "r")
 readme_File = open("README.md", "w")
 replacements = {"%%+": "##", "%+": "#", "%%": "-", "%": "##", "\\newacronym{": "- ", "$\\textit{": "*", "\\newacronym[": "- ", "plural=": "Plural= ", " firstPlural=": "", "$^{": "^", "{\\gls{": "-> Lower-Case: ","\\gls{": "-> Lower-Case= ", "/\\gls{": "-> Lower-Case: ", "$\\approx$": "~", "description=": "Description= ", "$\\&$": "&", "]{": " -> ", "} ":" -> ", "[p": "P", "$": "", "}{": " -> ", "}": "", "\\epsilon": "$\\epsilon$"}
