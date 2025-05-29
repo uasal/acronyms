@@ -1,12 +1,14 @@
 # Converts latex acronym format to a rough markdown template for easier viewing
-name: Markdown Acronym Workflow
+name: Markdown / Latex Acronym Workflow
 
 on:
   push:
     branches:
       - main
+
   pull_request:
     types: [opened, reopened, edited, synchronize]
+
   workflow_dispatch:
 
 # Runs script and uploads new version if in main for markdown output
@@ -24,7 +26,7 @@ jobs:
 
       - name: Run Markdown Script
         run: |
-          rm -f combined-acronyms.md
+          rm -f uasal-acronyms.md
           python utilities/latex_acronyms-to-markdown.py
 
       - name: Upload Markdown Artifact
@@ -33,10 +35,10 @@ jobs:
         if: always()
         with:
           name: Markdown-Acronyms
-          path: combined-acronyms.md
+          path: uasal-acronyms.md
 
       - name: Run LaTeX Script
-        run: bash compile-test.sh
+        run: bash compile.sh
 
       - name: Upload LaTeX Artifact
         uses: actions/upload-artifact@v4
@@ -44,7 +46,7 @@ jobs:
         if: always()
         with:
           name: Latex-Acronyms-PDF
-          path: compile-test.pdf
+          path: compiled-acronyms.pdf
 
       - name: Extract branch name
         shell: bash
