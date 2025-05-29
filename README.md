@@ -1,4 +1,4 @@
-[![Markdown Acronym Workflow](https://github.com/sfrinaldi/acronyms-test/actions/workflows/md-workflow.yml/badge.svg)](https://github.com/sfrinaldi/acronyms-test/actions/workflows/md-workflow.yml)
+[![Markdown Acronym Workflow](https://github.com/sfrinaldi/acronyms-fork/actions/workflows/md-workflow.yml/badge.svg)](https://github.com/sfrinaldi/acronyms-fork/actions/workflows/md-workflow.yml)
 
 # UASAL / Acronyms
 For storing the latest versions of acronyms for other repos to pull from. The [`uasal_acronyms.tex`](uasal_acronyms.tex) file was generating by using non-duplicate values from original .tex files found in other repos and on Overleaf. These can be viewed in the [archives](archives/) directory. The purpose of having one acronym.tex file instead of multiple is to limit issues with compiling latex documentation if there are duplicate listings. A rough script for generating a markdown file from the combined .tex acronyms file provided as well. Use the `glossaries.tex` file for adding additional terms that are not acronyms to the glossary for latex to use.
