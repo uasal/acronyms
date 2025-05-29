@@ -59,8 +59,6 @@ jobs:
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          # git add uasal-acronyms.md
-          # git add compiled-acronyms.pdf
           git add README.md
           git diff-index --quiet HEAD ||  git commit -m "Updating README.md for markdown adjustments"  # commit to the repository (ignore if no modification)
           git push # push to remote branch
