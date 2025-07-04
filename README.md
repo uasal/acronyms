@@ -116,10 +116,11 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - EFC -> EFC -> electric-field conjugation
 - iEFC -> EFC -> implicit -> Lower-Case= EFC
 - LDFC -> LDFC -> linear dark field control
-- DAC -> DAC -> digital-to-analog converter
 - TMA -> TMA -> three-mirror anastigmat
 - resel -> resel -> resolution element
-- BOM -> BOM -> Bill of Materials
+- IFU -> IFU -> integral field unit
+- IFS -> IFS -> integral field spectrograph
+- ULE -> ULE -> ultra-low expansion glass
 
 ---------------------------------
 
@@ -155,6 +156,9 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - TLE -> TLE -> Two Line Element set
 - TRL -> TRL -> technology readiness level
 - swap -> SWaP -> Size, Weight, and Power
+
+##electronics
+- DAC -> DAC -> digital-to-analog converter
 
 ---------------------------------
 
@@ -259,7 +263,6 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - ITL -> ITL -> Imaging Technology Lab
 - TAO -> TAO -> Tokyo Atacama Observatory
 - UVS -> UVS -> Ultraviolet Spectrograph
-- IFS -> IFS -> Integral Field Spectrograph
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
 - SCoOB -> scoob -> space-coronagraph optical bench
 
@@ -284,6 +287,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - DBMS -> DBMS -> database management system
 - POPPY -> POPPY -> Physical Optics Propagation in Python
 - SOEDMS -> SOEDMS -> Steward Observatory Electronic Data Management System
+- CAAO -> CAAO -> Center for Astronomical Adaptive Optics
 
 ---------------------------------
 
@@ -404,3 +408,9 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - DOF -> DOF -> degrees-of-freedom
 
 
+---------------------------------
+
+## Management
+
+- BOM -> BOM -> Bill of Materials
+- POC -> POC -> point of contact
