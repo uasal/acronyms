@@ -1,4 +1,4 @@
-[![Markdown Acronym Workflow](https://github.com/sfrinaldi/acronyms-fork/actions/workflows/ci.yml/badge.svg)](https://github.com/sfrinaldi/acronyms-fork/actions/workflows/ci.yml)
+[![Markdown Acronym Workflow](https://github.com/uasal/acronyms/actions/workflows/ci.yml/badge.svg)](https://github.com/uasal/acronyms/actions/workflows/ci.yml)
 
 > [!Note]
 > The following information was generated automatically by pulling from [info.md](utilities/info.md) and [uasal-acronyms.tex](uasal-acronyms.tex) to create this updated `README.md` file.
@@ -23,11 +23,11 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 6. Assign Reviewer (ex. sfrinaldi, douglase)
   
 > [!Note]
-> A latex pdf is generated as well with both acronyms **and** glossary terms which can be found here: [compiled-acronyms.pdf](https://github.com/sfrinaldi/acronyms-fork/tree/compiled/compiled-acronyms.pdf)
+> A latex pdf is generated as well with both acronyms **and** glossary terms which can be found here: [compiled-acronyms.pdf](https://github.com/uasal/acronyms/tree/compiled/compiled-acronyms.pdf)
 
 
 ## CI Output Documentation
-This repository outputs the results of the workflow for this repo to the [compiled](https://github.com/sfrinaldi/acronyms-fork/tree/compiled) branch. This includes the `compiled-acronyms.pdf` which has both acronyms and related information such as glossaries and citations. An automatic version of the markdown file that is created is provided both below for quick reference and on the compiled branch (both generated and updated by the same workflow).
+This repository outputs the results of the workflow for this repo to the [compiled](https://github.com/uasal/acronyms/tree/compiled) branch. This includes the `compiled-acronyms.pdf` which has both acronyms and related information such as glossaries and citations. An automatic version of the markdown file that is created is provided both below for quick reference and on the compiled branch (both generated and updated by the same workflow).
 
 > [!Note]
 > The following information was generated automatically by pulling information from [compiled-acronyms.tex](compiled-acronyms.tex) that was converted to markdown using a test [script](utilities/latex_acronyms-to-markdown.py) that was added to this `README.md`.
