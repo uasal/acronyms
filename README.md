@@ -1,4 +1,4 @@
-[![Markdown Acronym Workflow](https://github.com/sfrinaldi/acronyms-fork/actions/workflows/ci.yml/badge.svg)](https://github.com/sfrinaldi/acronyms-fork/actions/workflows/ci.yml)
+[![Markdown Acronym Workflow](https://github.com/uasal/acronyms/actions/workflows/ci.yml/badge.svg)](https://github.com/uasal/acronyms/actions/workflows/ci.yml)
 
 > [!Note]
 > The following information was generated automatically by pulling from [info.md](utilities/info.md) and [uasal-acronyms.tex](uasal-acronyms.tex) to create this updated `README.md` file.
@@ -23,11 +23,11 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 6. Assign Reviewer (ex. sfrinaldi, douglase)
   
 > [!Note]
-> A latex pdf is generated as well with both acronyms **and** glossary terms which can be found here: [compiled-acronyms.pdf](https://github.com/sfrinaldi/acronyms-fork/tree/compiled/compiled-acronyms.pdf)
+> A latex pdf is generated as well with both acronyms **and** glossary terms which can be found here: [compiled-acronyms.pdf](https://github.com/uasal/acronyms/tree/compiled/compiled-acronyms.pdf)
 
 
 ## CI Output Documentation
-This repository outputs the results of the workflow for this repo to the [compiled](https://github.com/sfrinaldi/acronyms-fork/tree/compiled) branch. This includes the `compiled-acronyms.pdf` which has both acronyms and related information such as glossaries and citations. An automatic version of the markdown file that is created is provided both below for quick reference and on the compiled branch (both generated and updated by the same workflow).
+This repository outputs the results of the workflow for this repo to the [compiled](https://github.com/uasal/acronyms/tree/compiled) branch. This includes the `compiled-acronyms.pdf` which has both acronyms and related information such as glossaries and citations. An automatic version of the markdown file that is created is provided both below for quick reference and on the compiled branch (both generated and updated by the same workflow).
 
 > [!Note]
 > The following information was generated automatically by pulling information from [compiled-acronyms.tex](compiled-acronyms.tex) that was converted to markdown using a test [script](utilities/latex_acronyms-to-markdown.py) that was added to this `README.md`.
@@ -41,7 +41,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 
 ## Edit Notes & Information:
 - Modified- 20250707 (YYYYMMDD)
-- Notes: Combined other acronym listings to this file and added some missing acronyms.
+- Notes: Added acronyms listed in issue #16
 - Modified- 20250218 (YYYYMMDD)
 - Notes: ESD updated links in header to new repo
 
@@ -172,8 +172,18 @@ This repository outputs the results of the workflow for this repo to the [compil
 - TRL -> TRL -> technology readiness level
 - swap -> SWaP -> Size, Weight, and Power
 
-##electronics
+---------------------------------
+
+## Electronics / Radiation
+
 - DAC -> DAC -> digital-to-analog converter
+- SEE -> SEE -> Single Event Effects
+- MOSFET -> MOSFET -> Metal-Oxide-Semiconductor Field-Effect Transistor
+- TID -> TID -> Total Ionizing Dose
+- TNID -> TNID -> Total Ionizing Dose
+- EDAC -> EDAC -> Error Detection and Correction
+- EMI -> EMI -> Electromagnetic Compatibility
+
 
 ---------------------------------
 
@@ -280,6 +290,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 - UVS -> UVS -> Ultraviolet Spectrograph
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
 - SCoOB -> scoob -> space-coronagraph optical bench
+- HWO -> HWO -> Habitable World Observatory
 
 ---------------------------------
 
@@ -398,6 +409,10 @@ This repository outputs the results of the workflow for this repo to the [compil
 - MM -> MM -> Machine Model [for electrostatic discharge]
 - LVDS -> LVDS -> Low-Voltage Differential Signal
 - LNA -> LNA -> Low Noise Amplifier
+- FoS -> FoS -> Factors of Safety
+- DLL -> DLL -> Design Limit Loads
+- MoS -> MoS -> Margin of Safety = (Material Allowable / (Max Stree -> Lower-Case= MPE -> * -> Lower-Case= FoS)) - 1
+- MPE -> MPE -> Maximum Predicted Environments
 
 
 ---------------------------------
@@ -429,3 +444,5 @@ This repository outputs the results of the workflow for this repo to the [compil
 
 - BOM -> BOM -> Bill of Materials
 - POC -> POC -> point of contact
+- CDRL -> CDRL -> Contract Data Requirement List
+- FBD -> FBD -> Functional Block Diagram
