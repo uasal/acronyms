@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - main
-      - sfrinaldi/structure-adjustments
+      - sfrinaldi/structure-adjustements
 
   pull_request:
     types: [opened, reopened, edited, synchronize]
