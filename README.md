@@ -31,6 +31,8 @@ This repository outputs the results of the workflow for this repo to the compile
 ## Edit Notes & Information:
 - Modified- 20250218 (YYYYMMDD)
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
+- Modified- 20250218 (YYYYMMDD)
+- Notes: ESD updated links in header to new repo
 
 ---------------------------------
 
@@ -118,10 +120,11 @@ This repository outputs the results of the workflow for this repo to the compile
 - EFC -> EFC -> electric-field conjugation
 - iEFC -> EFC -> implicit -> Lower-Case= EFC
 - LDFC -> LDFC -> linear dark field control
-- DAC -> DAC -> digital-to-analog converter
 - TMA -> TMA -> three-mirror anastigmat
 - resel -> resel -> resolution element
-- BOM -> BOM -> Bill of Materials
+- IFU -> IFU -> integral field unit
+- IFS -> IFS -> integral field spectrograph
+- ULE -> ULE -> ultra-low expansion glass
 
 ---------------------------------
 
@@ -157,6 +160,9 @@ This repository outputs the results of the workflow for this repo to the compile
 - TLE -> TLE -> Two Line Element set
 - TRL -> TRL -> technology readiness level
 - swap -> SWaP -> Size, Weight, and Power
+
+##electronics
+- DAC -> DAC -> digital-to-analog converter
 
 ---------------------------------
 
@@ -261,7 +267,6 @@ This repository outputs the results of the workflow for this repo to the compile
 - ITL -> ITL -> Imaging Technology Lab
 - TAO -> TAO -> Tokyo Atacama Observatory
 - UVS -> UVS -> Ultraviolet Spectrograph
-- IFS -> IFS -> Integral Field Spectrograph
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
 - SCoOB -> scoob -> space-coronagraph optical bench
 
@@ -286,6 +291,7 @@ This repository outputs the results of the workflow for this repo to the compile
 - DBMS -> DBMS -> database management system
 - POPPY -> POPPY -> Physical Optics Propagation in Python
 - SOEDMS -> SOEDMS -> Steward Observatory Electronic Data Management System
+- CAAO -> CAAO -> Center for Astronomical Adaptive Optics
 
 ---------------------------------
 
@@ -406,3 +412,9 @@ This repository outputs the results of the workflow for this repo to the compile
 - DOF -> DOF -> degrees-of-freedom
 
 
+---------------------------------
+
+## Management
+
+- BOM -> BOM -> Bill of Materials
+- POC -> POC -> point of contact
