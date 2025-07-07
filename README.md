@@ -1,34 +1,51 @@
-[![Markdown Acronym Workflow](https://github.com/sfrinaldi/acronyms-test/actions/workflows/md-workflow.yml/badge.svg)](https://github.com/sfrinaldi/acronyms-test/actions/workflows/md-workflow.yml)
+[![Markdown Acronym Workflow](https://github.com/uasal/acronyms/actions/workflows/ci.yml/badge.svg)](https://github.com/uasal/acronyms/actions/workflows/ci.yml)
+
+> [!Note]
+> The following information was generated automatically by pulling from [info.md](utilities/info.md) and [uasal-acronyms.tex](uasal-acronyms.tex) to create this updated `README.md` file.
 
 # UASAL / Acronyms
-For storing the latest versions of acronyms for other repos to pull from. The [`combined_acronyms.tex`](combined_acronyms.tex) file was generating by using non-duplicate values from original .tex files found in other repos and on Overleaf. These can be viewed in the [archives](archives/) directory. The purpose of having one acronym.tex file instead of multiple is to limit issues with compiling latex documentation if there are duplicate listings. A rough script for generating a markdown file from the combined .tex acronyms file provided as well. Use the `glossaries.tex` file for adding additional terms that are not acronyms to the glossary for latex to use.
+For storing the latest versions of acronyms for other repos to pull from. The [`uasal-acronyms.tex`](uasal-acronyms.tex) file was generating by using non-duplicate values from original .tex files found in other repos and on Overleaf. These can be viewed in the [archives](archives/) directory. The purpose of having one acronym.tex file instead of multiple is to limit issues with compiling latex documentation if there are duplicate listings. A rough script for generating a markdown file from the combined .tex acronyms file provided as well. Use the `glossaries.tex` file for adding additional terms that are not acronyms to the glossary for latex to use.
 
-## Editing Information
-- Apply updates to the [`combined_acronyms.tex`](combined_acronyms.tex) file. 
-  - Use format: `\newacronym{label}{ABBREVIATION}{long-form of the term}`
-  - **Verify** there is no other acronym in the file that has the same label *(CI check for this as well)*
-- Update `Modified` section in [`combined_acronyms.tex`](combined_acronyms.tex) with the date you edited the file.
-  - Add the date last modified (not automatic presently) 
-- GitHub workflow will update this `README.md` and include the markdown conversion to display below and add a new [`combined-acronyms.md`](combined-acronyms.md) file with the adjustments.
-  - Update `README.md` by editing the [`info.md`](utilities/info.md) in the utilities directory (for edit to this _top_ half of the `README.md`)
-  - This format can be changed to a markdown table if of use in the future.
-- A latex pdf is generated as well with both acronyms **and** glossary terms which can be found here: [combined-test.pdf](combined-test.pdf)
-  - **NOTE:** This was a test feature / an output of the CI latex test compiling method mainly
+## Adding New Acronyms
+> [!Warning]
+> UASAL Automatic Latex Documentation Repositories may be using the `uasal-acronyms.tex` from this repository for their workflows. <br>
+> 
+> Do **NOT** re-name the `uasal-acronyms.tex` unless prepared to edit other repositories thar are looking for this specific file within their workflows.
 
-**Results of the last latex to markdown conversion run shown below:**
+1. Create a new branch _or_ update using the `develop` branch
+2. Create a new Pull Request to update `main` as draft
+3. Edit [`uasal-acronyms.tex`](uasal-acronyms.tex) 
+     - **Format:** `\newacronym{label}{ABBREVIATION}{long-form of the term}`
+     - **Verify** there is no other acronym in the file that has the same label *(CI check for this as well)*
+4. Update `Modified` section in [`uasal-acronyms.tex`](uasal-acronyms.tex) with the new date last modified value
+     - *Not automatic presently for markdown output*
+5. Change Pull Request from draft to ready for review
+6. Assign Reviewer (ex. sfrinaldi, douglase)
+  
+> [!Note]
+> A latex pdf is generated as well with both acronyms **and** glossary terms which can be found here: [compiled-acronyms.pdf](https://github.com/uasal/acronyms/tree/compiled/compiled-acronyms.pdf)
+
+
+## CI Output Documentation
+This repository outputs the results of the workflow for this repo to the [compiled](https://github.com/uasal/acronyms/tree/compiled) branch. This includes the `compiled-acronyms.pdf` which has both acronyms and related information such as glossaries and citations. An automatic version of the markdown file that is created is provided both below for quick reference and on the compiled branch (both generated and updated by the same workflow).
+
+> [!Note]
+> The following information was generated automatically by pulling information from [compiled-acronyms.tex](compiled-acronyms.tex) that was converted to markdown using a test [script](utilities/latex_acronyms-to-markdown.py) that was added to this `README.md`.
 
 ---------------------------------
 # Acronym Listing / Descriptions
 - Working list of active and past acronyms / abbreviations used for a variety of projects.
 - Refer to the combined-acronyms.tex file for making additional edits and updates to this sheet.
 - Refer to the glossaries.tex file for adding additional terms to the glossary that are not acronyms.
-- Use the format `- label -> ABBREVIATION -> long-form of the term' for adding new acronyms.
+- Use the format `- label -> ABBREVIATION -> long-form of the term` for adding new acronyms.
 
 ## Edit Notes & Information:
 - Modified- 20250218 (YYYYMMDD)
 - Notes: Combined other acronym listings to this file and added some missing acronyms.
 - Modified- 20250218 (YYYYMMDD)
 - Notes: ESD updated links in header to new repo
+- Modified- 20250707 (YYYYMMDD)
+- Notes: Added acronyms listed in issue #16
 
 ---------------------------------
 
@@ -157,8 +174,19 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - TRL -> TRL -> technology readiness level
 - swap -> SWaP -> Size, Weight, and Power
 
-##electronics
+---------------------------------
+
+## Electronics / Radiation
+
 - DAC -> DAC -> digital-to-analog converter
+- SEE -> SEE -> Single Event Effects
+- MOSFET -> MOSFET -> Metal-Oxide-Semiconductor Field-Effect Transistor
+- TID -> TID -> Total Ionizing Dose
+- TNID -> TNID -> Total Non-Ionizing Dose
+- EDAC -> EDAC -> Error Detection and Correction
+- EMI -> EMI -> Electromagnetic Interference
+- EMC -> EMC -> Electromagnetic Compatibility
+
 
 ---------------------------------
 
@@ -265,6 +293,7 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - UVS -> UVS -> Ultraviolet Spectrograph
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
 - SCoOB -> scoob -> space-coronagraph optical bench
+- HWO -> HWO -> Habitable Worlds Observatory
 
 ---------------------------------
 
@@ -383,6 +412,10 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 - MM -> MM -> Machine Model [for electrostatic discharge]
 - LVDS -> LVDS -> Low-Voltage Differential Signal
 - LNA -> LNA -> Low Noise Amplifier
+- FoS -> FoS -> Factors of Safety
+- DLL -> DLL -> Design Limit Loads
+- MoS -> MoS -> Margin of Safety = (Material Allowable / (Max Stress -> Lower-Case= MPE -> * -> Lower-Case= FoS)) - 1
+- MPE -> MPE -> Maximum Predicted Environments
 
 
 ---------------------------------
@@ -414,3 +447,5 @@ For storing the latest versions of acronyms for other repos to pull from. The [`
 
 - BOM -> BOM -> Bill of Materials
 - POC -> POC -> point of contact
+- CDRL -> CDRL -> Contract Data Requirement List
+- FBD -> FBD -> Functional Block Diagram
