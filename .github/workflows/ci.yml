@@ -54,7 +54,7 @@ jobs:
         run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
 
       - name: Update README.md
-        if: ${{ github.ref != 'refs/heads/main'}}
+        if: ${{ github.ref != 'refs/heads/main' && github.event_name != 'pull_request' }}
         run: |
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
