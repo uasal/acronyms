@@ -1,6 +1,8 @@
 .idea
 uasal-acronyms.md
 compiled-acronyms.pdf
+utilities/gitinfo2-hook.sh
+README.md
 
 
 # Latex residue files
