@@ -40,10 +40,12 @@ This repository outputs the results of the workflow for this repo to the [compil
 - Use the format `- label -> ABBREVIATION -> long-form of the term` for adding new acronyms.
 
 ## Edit Notes & Information:
-- Modified- 20250707 (YYYYMMDD)
-- Notes: Added acronyms listed in issue #16
+- Modified- 20250218 (YYYYMMDD)
+- Notes: Combined other acronym listings to this file and added some missing acronyms.
 - Modified- 20250218 (YYYYMMDD)
 - Notes: ESD updated links in header to new repo
+- Modified- 20250707 (YYYYMMDD)
+- Notes: Added acronyms listed in issue #16
 
 ---------------------------------
 
