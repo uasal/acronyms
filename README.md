@@ -41,7 +41,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 
 ## Edit Notes & Information:
 - Modified- 20250707 (YYYYMMDD)
-- Notes: Combined other acronym listings to this file and added some missing acronyms.
+- Notes: Added acronyms listed in issue #16
 - Modified- 20250218 (YYYYMMDD)
 - Notes: ESD updated links in header to new repo
 
@@ -172,8 +172,18 @@ This repository outputs the results of the workflow for this repo to the [compil
 - TRL -> TRL -> technology readiness level
 - swap -> SWaP -> Size, Weight, and Power
 
-##electronics
+---------------------------------
+
+## Electronics / Radiation
+
 - DAC -> DAC -> digital-to-analog converter
+- SEE -> SEE -> Single Event Effects
+- MOSFET -> MOSFET -> Metal-Oxide-Semiconductor Field-Effect Transistor
+- TID -> TID -> Total Ionizing Dose
+- TNID -> TNID -> Total Ionizing Dose
+- EDAC -> EDAC -> Error Detection and Correction
+- EMI -> EMI -> Electromagnetic Compatibility
+
 
 ---------------------------------
 
@@ -280,6 +290,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 - UVS -> UVS -> Ultraviolet Spectrograph
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
 - SCoOB -> scoob -> space-coronagraph optical bench
+- HWO -> HWO -> Habitable World Observatory
 
 ---------------------------------
 
@@ -398,6 +409,10 @@ This repository outputs the results of the workflow for this repo to the [compil
 - MM -> MM -> Machine Model [for electrostatic discharge]
 - LVDS -> LVDS -> Low-Voltage Differential Signal
 - LNA -> LNA -> Low Noise Amplifier
+- FoS -> FoS -> Factors of Safety
+- DLL -> DLL -> Design Limit Loads
+- MoS -> MoS -> Margin of Safety = (Material Allowable / (Max Stree -> Lower-Case= MPE -> * -> Lower-Case= FoS)) - 1
+- MPE -> MPE -> Maximum Predicted Environments
 
 
 ---------------------------------
@@ -429,3 +444,5 @@ This repository outputs the results of the workflow for this repo to the [compil
 
 - BOM -> BOM -> Bill of Materials
 - POC -> POC -> point of contact
+- CDRL -> CDRL -> Contract Data Requirement List
+- FBD -> FBD -> Functional Block Diagram
