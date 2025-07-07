@@ -182,9 +182,10 @@ This repository outputs the results of the workflow for this repo to the [compil
 - SEE -> SEE -> Single Event Effects
 - MOSFET -> MOSFET -> Metal-Oxide-Semiconductor Field-Effect Transistor
 - TID -> TID -> Total Ionizing Dose
-- TNID -> TNID -> Total Ionizing Dose
+- TNID -> TNID -> Total Non-Ionizing Dose
 - EDAC -> EDAC -> Error Detection and Correction
-- EMI -> EMI -> Electromagnetic Compatibility
+- EMI -> EMI -> Electromagnetic Interference
+- EMC -> EMC -> Electromagnetic Compatibility
 
 
 ---------------------------------
@@ -292,7 +293,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 - UVS -> UVS -> Ultraviolet Spectrograph
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
 - SCoOB -> scoob -> space-coronagraph optical bench
-- HWO -> HWO -> Habitable World Observatory
+- HWO -> HWO -> Habitable Worlds Observatory
 
 ---------------------------------
 
@@ -413,7 +414,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 - LNA -> LNA -> Low Noise Amplifier
 - FoS -> FoS -> Factors of Safety
 - DLL -> DLL -> Design Limit Loads
-- MoS -> MoS -> Margin of Safety = (Material Allowable / (Max Stree -> Lower-Case= MPE -> * -> Lower-Case= FoS)) - 1
+- MoS -> MoS -> Margin of Safety = (Material Allowable / (Max Stress -> Lower-Case= MPE -> * -> Lower-Case= FoS)) - 1
 - MPE -> MPE -> Maximum Predicted Environments
 
 
