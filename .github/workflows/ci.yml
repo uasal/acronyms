@@ -3,9 +3,6 @@ name: Markdown / Latex Acronym Workflow
 
 on:
   push:
-    branches-ignore:
-      - main # Ignore when items are pushed to main / README.md gets updated before then
-
   pull_request:
     types: [opened, reopened, edited, synchronize]
 
