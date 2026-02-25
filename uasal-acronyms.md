@@ -103,6 +103,7 @@
 - IFU -> IFU -> integral field unit
 - IFS -> IFS -> integral field spectrograph
 - ULE -> ULE -> ultra-low expansion glass
+- SMR -> SMR -> spherically mounted retroreflector
 
 ---------------------------------
 
