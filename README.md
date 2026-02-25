@@ -138,6 +138,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 - IFU -> IFU -> integral field unit
 - IFS -> IFS -> integral field spectrograph
 - ULE -> ULE -> ultra-low expansion glass
+- SMR -> SMR -> spherically mounted retroreflector
 
 ---------------------------------
 
