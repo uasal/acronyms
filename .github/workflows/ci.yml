@@ -35,7 +35,10 @@ jobs:
           path: uasal-acronyms.md
 
       - name: Run LaTeX Script
-        run: bash compile.sh
+        run: |
+          git status
+          git branch -a
+          bash compile.sh
 
       - name: Upload LaTeX Artifact
         uses: actions/upload-artifact@v4
