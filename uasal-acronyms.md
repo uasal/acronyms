@@ -55,6 +55,7 @@
 - DIATF -> DIATF -> Drake Imager Assembly and Testing Facility
 - ETS -> ets -> Engineering Technical Services
 - ASTM -> ASTM -> American Society for Testing and Materials
+- CAAO -> CAAO -> Center for Astronomical Adaptive Optics
 
 ---------------------------------
 
@@ -94,7 +95,6 @@
 - LGS -> LGS -> laser guide star
 - WFCS -> WFCS -> wavefront control system
 - OPD -> OPD -> optical path difference
-- MEL -> MEL -> Master Equipment List
 - EFC -> EFC -> electric-field conjugation
 - iEFC -> EFC -> implicit -> Lower-Case= EFC
 - LDFC -> LDFC -> linear dark field control
@@ -152,7 +152,7 @@
 - EDAC -> EDAC -> Error Detection and Correction
 - EMI -> EMI -> Electromagnetic Interference
 - EMC -> EMC -> Electromagnetic Compatibility
-
+- LLIPC -> LLIPC -> low-latency IPC
 
 ---------------------------------
 
@@ -260,6 +260,7 @@
 - STIS -> STIS -> Space Telescope Imaging Spectrograph
 - SCoOB -> scoob -> space-coronagraph optical bench
 - HWO -> HWO -> Habitable Worlds Observatory
+- scrappy -> SCRaPpy -> Space Coronagraph Rapid Prototype
 
 ---------------------------------
 
@@ -282,7 +283,15 @@
 - DBMS -> DBMS -> database management system
 - POPPY -> POPPY -> Physical Optics Propagation in Python
 - SOEDMS -> SOEDMS -> Steward Observatory Electronic Data Management System
-- CAAO -> CAAO -> Center for Astronomical Adaptive Optics
+- FSW -> FSW -> Flight Software
+- indi -> INDI -> Insturment Neutral Distributed Interface
+- SIPC -> SIPC -> Soft-real-time inter-process communication
+- ISIO -> ISIO -> Image Stream IO
+- XWC -> XWC -> eXtreme Wavefront Control
+- CACAO -> CACAO -> Compute and Control of Adaptive Optics
+- XWCTk -> XWCTk -> eXtreme Wavefront Control Toolkit
+- SDP -> SDP -> Software Development Plan
+- SDLC -> SDLC -> Software Development Lifecycle
 
 ---------------------------------
 
@@ -382,7 +391,7 @@
 - DLL -> DLL -> Design Limit Loads
 - MoS -> MoS -> Margin of Safety = (Material Allowable / (Max Stress -> Lower-Case= MPE -> * -> Lower-Case= FoS)) - 1
 - MPE -> MPE -> Maximum Predicted Environments
-
+- PPAP -> PPAP -> Policies, Procedures, and Protocols
 
 ---------------------------------
 
@@ -415,3 +424,12 @@
 - POC -> POC -> point of contact
 - CDRL -> CDRL -> Contract Data Requirement List
 - FBD -> FBD -> Functional Block Diagram
+
+---------------------------------
+
+## SE / Systems Related
+
+- PEL -> PEL -> Power Equipment List
+- MEL -> MEL -> Mass Equipment List
+- MAP -> MAP -> Mission Assurance Plan
+- FMECA -> FMECA -> Failure Mode, Effects, and Criticality Analysis
