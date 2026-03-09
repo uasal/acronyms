@@ -3,6 +3,7 @@ uasal-acronyms.md
 compiled-acronyms.pdf
 utilities/gitinfo2-hook.sh
 README.md
+.vscode/*
 
 
 # Latex residue files
@@ -24,3 +25,4 @@ README.md
 *.fls
 *.synctex(busy)
 *.synctex.gz
+
