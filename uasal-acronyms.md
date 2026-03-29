@@ -161,6 +161,7 @@
 - WFS -> WFS -> wavefront sensor
 - LSI -> LSI -> Lateral Shearing Interferometer
 - VVC -> VVC -> Vector Vortex Coronagraph
+- VVW -> VVW -> Vector Vortex Waveplate
 - VNC -> VNC -> Visible Nulling Coronagraph
 - CGI -> CGI -> Coronagraph Instrument
 - IWA -> IWA -> Inner Working Angle
