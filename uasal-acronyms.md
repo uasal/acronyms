@@ -139,6 +139,7 @@
 - TLE -> TLE -> Two Line Element set
 - TRL -> TRL -> technology readiness level
 - swap -> SWaP -> Size, Weight, and Power
+- tcsi -> TCSI -> Telescope Control System Interface
 
 ---------------------------------
 
