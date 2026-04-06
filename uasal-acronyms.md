@@ -140,6 +140,7 @@
 - TRL -> TRL -> technology readiness level
 - swap -> SWaP -> Size, Weight, and Power
 - tcsi -> TCSI -> Telescope Control System Interface
+- muf -> MUF -> Model Uncertainty Factor
 
 ---------------------------------
 
