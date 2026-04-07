@@ -141,6 +141,8 @@
 - swap -> SWaP -> Size, Weight, and Power
 - tcsi -> TCSI -> Telescope Control System Interface
 - muf -> MUF -> Model Uncertainty Factor
+- AOCS -> AOCS -> Attitude and Orbit Control System
+- HSDR -> HSDR -> High Speed Data Recorder
 
 ---------------------------------
 
