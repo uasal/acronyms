@@ -6,7 +6,9 @@ env:
   COMPILED: compiled # Compiled Documents Branch Name
 
 on:
-  push:
+  push: 
+    branches:
+      - main
   pull_request:
     types: [opened, reopened, edited, synchronize]
 
@@ -38,7 +40,9 @@ jobs:
         if: always()
         with:
           name: Markdown-Acronyms
-          path: uasal-acronyms.md
+          path: |
+            uasal-acronyms.md
+            *.pdf
           retention-days: 7
 
       - name: Run LaTeX Script
@@ -60,7 +64,7 @@ jobs:
         run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
 
       - name: Update README.md
-        if: ${{ github.ref != 'refs/heads/main' && github.event_name != 'pull_request' }}
+        if: ${{ github.ref != 'refs/heads/main' }}
         run: |
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
@@ -87,8 +91,8 @@ jobs:
             mv *acronyms.md output/
           elif [[ "${{ github.head_ref}}" != '' ]]; then
             mkdir -p output/Pull_Requests/${{github.event.pull_request.number}}
-            mv *.pdf  output/
-            mv *acronyms.md output/
+            mv *.pdf  output/Pull_Requests/${{github.event.pull_request.number}}
+            mv *acronyms.md output/Pull_Requests/${{github.event.pull_request.number}}
           else
             echo "Unknown exception hit that shouldn't be allowed unless CI variables or Trigger cases have been adjusted in compiled.yml"
           fi
@@ -99,4 +103,3 @@ jobs:
           git commit -m "Compiled documentation from ${{github.ref_name}}"                        
           git push  
         shell: bash
-        
