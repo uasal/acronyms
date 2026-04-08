@@ -35,6 +35,7 @@ jobs:
         with:
           name: Markdown-Acronyms
           path: uasal-acronyms.md
+          retention-days: 7
 
       - name: Run LaTeX Script
         run: |
