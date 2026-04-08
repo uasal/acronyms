@@ -7,8 +7,6 @@ env:
 
 on:
   push: 
-    branches:
-      - main
   pull_request:
     types: [opened, reopened, edited, synchronize]
 
@@ -64,7 +62,7 @@ jobs:
         run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
 
       - name: Update README.md
-        if: ${{ github.ref != 'refs/heads/main' }}
+        if: ${{ github.ref != 'refs/heads/main' && github.head_ref != '' }}
         run: |
           git fetch                         # fetch branches
           git config --global user.name 'GitHub Action'
