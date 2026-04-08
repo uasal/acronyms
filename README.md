@@ -174,6 +174,10 @@ This repository outputs the results of the workflow for this repo to the [compil
 - TLE -> TLE -> Two Line Element set
 - TRL -> TRL -> technology readiness level
 - swap -> SWaP -> Size, Weight, and Power
+- tcsi -> TCSI -> Telescope Control System Interface
+- muf -> MUF -> Model Uncertainty Factor
+- AOCS -> AOCS -> Attitude and Orbit Control System
+- HSDR -> HSDR -> High Speed Data Recorder
 
 ---------------------------------
 
@@ -196,6 +200,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 - WFS -> WFS -> wavefront sensor
 - LSI -> LSI -> Lateral Shearing Interferometer
 - VVC -> VVC -> Vector Vortex Coronagraph
+- VVW -> VVW -> Vector Vortex Waveplate
 - VNC -> VNC -> Visible Nulling Coronagraph
 - CGI -> CGI -> Coronagraph Instrument
 - IWA -> IWA -> Inner Working Angle
@@ -459,6 +464,7 @@ This repository outputs the results of the workflow for this repo to the [compil
 - POC -> POC -> point of contact
 - CDRL -> CDRL -> Contract Data Requirement List
 - FBD -> FBD -> Functional Block Diagram
+- MIUL -> MIUL -> FMaterials Identification and Usage List
 
 ---------------------------------
 
