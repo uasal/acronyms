@@ -1,6 +1,10 @@
 # Converts latex acronym format to a rough markdown template for easier viewing
 name: Markdown / Latex Acronym Workflow
 
+# CI Variables
+env:
+  COMPILED: compiled # Compiled Documents Branch Name
+
 on:
   push:
   pull_request:
@@ -67,17 +71,32 @@ jobs:
 
 
       - name: Update Compiled Branch
-        if: ${{ github.ref == 'refs/heads/main'}}
+        if: ${{ (github.ref == 'refs/heads/main') || ( github.head_ref != '' ) }}
         run: |
           git fetch origin compiled  --recurse-submodules=no  
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git branch --track compiled origin/compiled        
+          git branch --track ${{env.COMPILED}}  origin/${{env.COMPILED}}        
           mkdir output
-          git worktree add output compiled                     
-          mv uasal-acronyms.md  output/uasal-acronyms.md
-          mv compiled-acronyms.pdf output/compiled-acronyms.pdf
+          git worktree add output ${{env.COMPILED}}  
+
+          echo "Checking trigger condition for workflow..."
+          if [[ "${{github.ref_name}}" == "main" ]]; then
+            echo "Running steps for main branch"
+            mv *.pdf  output/
+            mv *acronyms.md output/
+          elif [[ "${{ github.head_ref}}" != '' ]]; then
+            mkdir -p output/Pull_Requests/${{github.event.pull_request.number}}
+            mv *.pdf  output/
+            mv *acronyms.md output/
+          else
+            echo "Unknown exception hit that shouldn't be allowed unless CI variables or Trigger cases have been adjusted in compiled.yml"
+          fi
+
+          echo "Moving worktree and git adding."
           cd output                                            
           git add .                                         
-          git commit -m "Compiled documents created w/CI on main"                          
+          git commit -m "Compiled documentation from ${{github.ref_name}}"                        
           git push  
+        shell: bash
+        
