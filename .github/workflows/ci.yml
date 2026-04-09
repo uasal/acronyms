@@ -6,7 +6,7 @@ env:
   COMPILED: compiled # Compiled Documents Branch Name
 
 on:
-  push: 
+  push:
   pull_request:
     types: [opened, reopened, edited, synchronize]
 
