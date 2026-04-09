@@ -429,7 +429,7 @@
 - POC -> POC -> point of contact
 - CDRL -> CDRL -> Contract Data Requirement List
 - FBD -> FBD -> Functional Block Diagram
-- MIUL -> MIUL -> FMaterials Identification and Usage List
+- MIUL -> MIUL -> Materials Identification and Usage List
 
 ---------------------------------
 
