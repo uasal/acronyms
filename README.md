@@ -464,7 +464,6 @@ This repository outputs the results of the workflow for this repo to the [compil
 - POC -> POC -> point of contact
 - CDRL -> CDRL -> Contract Data Requirement List
 - FBD -> FBD -> Functional Block Diagram
-
 - MIUL -> MIUL -> Materials Identification and Usage List
 
 ---------------------------------
